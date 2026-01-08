@@ -2,9 +2,9 @@ backend:
   name: github
   repo: dreamoove/mb-therapeutics-blog
   branch: main
-
   base_url: https://mb-therapeutics-blog.vercel.app
-    auth_endpoint: /api/auth
+  auth_endpoint: /api/auth
+
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
@@ -23,7 +23,6 @@ collections:
       - {label: "Temps de lecture", name: "readingTime", widget: "string", default: "5 min"}
       - {label: "Catégorie", name: "category", widget: "string", default: "Guide"}
       - {label: "Corps de l'article", name: "body", widget: "markdown"}
-
   - name: "actualites"
     label: "Actualités"
     folder: "src/content/actualites"
