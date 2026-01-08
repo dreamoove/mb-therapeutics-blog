@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Workflow d'impression 3D en pharmacie hospitalière | MB Therapeutics">
+  <article class="article-container">
+    <header class="article-header">
+      <nav class="breadcrumb">
+        <a href="/">Accueil</a> <span>/</span>
+        <a href="/guides">Guides</a> <span>/</span>
+        <span>Workflow pharmacie</span>
+      </nav>
+      <h1>Workflow d'impression 3D en pharmacie hospitalière</h1>
+      <div class="article-meta">
+        <span class="date">📅 Guide 2024</span>
+        <span class="reading-time">⏱️ 6 min</span>
+        <span class="category">Organisation</span>
+      </div>
+    </header>
+    <section class="article-content">
+      <h2>Étapes du processus</h2>
+      <div class="highlight-box">
+        <h3>Circuit complet</h3>
+        <ol>
+          <li><strong>Prescription médicale</strong> : Ordonnance avec paramètres patient</li>
+          <li><strong>Validation pharmaceutique</strong> : Analyse et acceptation</li>
+          <li><strong>Conception</strong> : Création fichier 3D et formulation</li>
+          <li><strong>Production</strong> : Impression 3D sous atmosphère contrôlée</li>
+          <li><strong>Contrôle qualité</strong> : Tests analytiques</li>
+          <li><strong>Libération</strong> : Validation pharmaceutique finale</li>
+          <li><strong>Dispensation</strong> : Remise au service clinique</li>
+        </ol>
+      </div>
+
+      <h2>Rôles et responsabilités</h2>
+      <ul>
+        <li><strong>Pharmacien</strong> : Validation et libération</li>
+        <li><strong>Préparateur</strong> : Production et contrôles</li>
+        <li><strong>Assurance qualité</strong> : Audits et conformité</li>
+      </ul>
+
+      <h2>Documentation essentielle</h2>
+      <ul>
+        <li>Dossier de lot de fabrication</li>
+        <li>Cahier de production</li>
+        <li>Certificats d'analyse</li>
+        <li>Registre de traçabilité</li>
+      </ul>
+
+      <h2>Optimisation du workflow</h2>
+      <p>L'intégration de solutions MB Therapeutics permet d'automatiser de nombreuses étapes et de réduire les délais de production tout en garantissant la qualité.</p>
+      
+      <h2>Conclusion</h2>
+      <p>Un workflow bien défini est la clé d'une mise en œuvre réussie de l'impression 3D en pharmacie hospitalière.</p>
+    </section>
+    <section class="related-articles">
+      <h2>Articles liés</h2>
+      <div class="related-grid">
+        <a href="/guides/controle-qualite-impression-3d" class="related-card">
+          <h3>Contrôle qualité</h3>
+          <p>Assurance qualité en impression 3D</p>
+        </a>
+        <a href="/guides/impression-3d-pharmaceutique" class="related-card">
+          <h3>Guide impression 3D</h3>
+          <p>Introduction complète</p>
+        </a>
+      </div>
+    </section>
+  </article>
+</Layout>
+
+<style>
+  .article-container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+  .article-header { margin-bottom: 3rem; }
+  .breadcrumb { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-secondary); }
+  .breadcrumb a { color: var(--primary-blue); text-decoration: none; }
+  .article-header h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+  .article-meta { display: flex; gap: 1.5rem; font-size: 0.95rem; color: var(--text-secondary); }
+  .article-meta .category { background: linear-gradient(135deg, #8B5CF6, #7C3AED); color: white; padding: 0.25rem 0.75rem; border-radius: 1rem; }
+  .article-content { font-size: 1.0625rem; line-height: 1.8; }
+  .article-content h2 { font-size: 1.875rem; margin: 2.5rem 0 1.5rem; }
+  .article-content ul, .article-content ol { margin: 1.5rem 0; padding-left: 1.5rem; }
+  .article-content ul { list-style: none; }
+  .article-content ul li::before { content: "▸"; color: var(--primary-blue); font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
+  .article-content ol li { margin: 0.75rem 0; }
+  .highlight-box { background: #FAF5FF; border-left: 4px solid #8B5CF6; padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+  .highlight-box h3 { color: #8B5CF6; font-size: 1.125rem; margin: 0 0 0.5rem 0; }
+  .related-articles { margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--border-color); }
+  .related-articles h2 { color: var(--primary-blue); font-size: 1.5rem; margin-bottom: 1.5rem; }
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+  .related-card { background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); text-decoration: none; transition: all 0.3s ease; }
+  .related-card:hover { transform: translateY(-4px); box-shadow: 0 6px 12px rgba(91, 141, 239, 0.15); }
+  .related-card h3 { color: var(--primary-blue); font-size: 1.125rem; margin: 0 0 0.5rem 0; }
+  @media (max-width: 768px) { .article-container { padding: 1rem; } .article-header h1 { font-size: 1.875rem; } }
+</style>
