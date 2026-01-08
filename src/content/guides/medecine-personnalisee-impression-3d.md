@@ -1,7 +1,7 @@
 ---
 title: "Médecine personnalisée : l'avenir de la pharmacie hospitalière"
 description: "Comment l'impression 3D permet de créer des médicaments adaptés à chaque patient"
-pubDate: 2026-01-08T21:30:00.000Z
+pubDate: 2025-01-08T21:30:00.000Z
 readingTime: "7 min"
 category: "Guide"
 ---
