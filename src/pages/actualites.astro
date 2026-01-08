@@ -10,23 +10,35 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <section class="articles">
-      <div class="article-card">
+      <article class="article-card">
+        <div class="article-meta">
+          <span class="badge news">Actualité</span>
+          <span class="reading-time">8 min de lecture</span>
+        </div>
         <h2>Nouvelles réformes réglementaires 2024</h2>
-        <p>Découvrez les dernières réformes qui impactent le secteur de la pharmacie hospitalière.</p>
-        <a href="/actualites/reformes-reglementaires-2024">Lire l'article →</a>
-      </div>
+        <p>Découvrez les dernières réformes qui impactent le secteur de la pharmacie hospitalière et l'impression 3D de médicaments en France et en Europe.</p>
+        <a href="/actualites/reformes-reglementaires-2024" class="read-more">Lire l'article →</a>
+      </article>
 
-      <div class="article-card">
+      <article class="article-card">
+        <div class="article-meta">
+          <span class="badge news">Actualité</span>
+          <span class="reading-time">6 min de lecture</span>
+        </div>
         <h2>Innovations en impression 3D pharmaceutique</h2>
-        <p>Les dernières avancées technologiques dans l'impression 3D de médicaments personnalisés.</p>
-        <a href="/actualites/innovations-impression-3d">Lire l'article →</a>
-      </div>
+        <p>Les dernières avancées technologiques dans l'impression 3D de médicaments personnalisés. Découvrez les nouvelles techniques et matériaux disponibles.</p>
+        <a href="/actualites/innovations-impression-3d" class="read-more">Lire l'article →</a>
+      </article>
 
-      <div class="article-card">
+      <article class="article-card">
+        <div class="article-meta">
+          <span class="badge news">Actualité</span>
+          <span class="reading-time">7 min de lecture</span>
+        </div>
         <h2>Évolution de la personnalisation des médicaments</h2>
-        <p>Comment la personnalisation change la donne dans le traitement des patients.</p>
-        <a href="/actualites/personnalisation-medicaments">Lire l'article →</a>
-      </div>
+        <p>Comment la personnalisation change la donne dans le traitement des patients. Analyse des bénéfices et des défis de cette approche innovante.</p>
+        <a href="/actualites/personnalisation-medicaments" class="read-more">Lire l'article →</a>
+      </article>
     </section>
   </main>
 </Layout>
@@ -40,59 +52,112 @@ import Layout from '../layouts/Layout.astro';
 
   .hero {
     text-align: center;
-    padding: 3rem 0;
+    padding: 3rem 0 4rem 0;
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--primary-blue);
     margin-bottom: 1rem;
+    font-weight: 700;
   }
 
   .hero p {
-    font-size: 1.25rem;
-    color: #666;
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
   }
 
   .articles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
   }
 
   .article-card {
     background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
   }
 
   .article-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--hover-shadow);
   }
 
-  .article-card h2 {
-    color: var(--primary-blue);
-    font-size: 1.5rem;
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     margin-bottom: 1rem;
   }
 
-  .article-card p {
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-
-  .article-card a {
+  .badge {
+    background: #E8F3FF;
     color: var(--primary-blue);
-    text-decoration: none;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
     font-weight: 600;
   }
 
-  .article-card a:hover {
-    text-decoration: underline;
+  .badge.news {
+    background: #FEF3E8;
+    color: #FF9F43;
+  }
+
+  .reading-time {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+  }
+
+  .article-card h2 {
+    color: var(--text-primary);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .article-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .read-more {
+    display: inline-block;
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.2s;
+  }
+
+  .read-more:hover {
+    color: var(--dark-blue);
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+
+    .article-card {
+      padding: 1.5rem;
+    }
+
+    .article-card h2 {
+      font-size: 1.5rem;
+    }
   }
 </style>
