@@ -1,0 +1,142 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Technologies d'impression 3D pharmaceutique - MB Therapeutics">
+  <article class="article-container">
+    <header class="article-header">
+      <nav class="breadcrumb">
+        <a href="/">Accueil</a> / <a href="/guides">Guides</a> / <span>Technologies d'impression 3D</span>
+      </nav>
+      <h1>Technologies d'impression 3D en pharmacie</h1>
+      <div class="article-meta">
+        <span class="date">8 janvier 2026</span> • <span class="reading-time">10 min</span>
+      </div>
+    </header>
+
+    <div class="article-content">
+      <section>
+        <h2>Panorama des technologies disponibles</h2>
+        <p>L'impression 3D pharmaceutique s'appuie sur plusieurs technologies adaptées aux exigences strictes de l'industrie. Chaque méthode présente des avantages spécifiques selon le type de formulation souhaitée.</p>
+      </section>
+
+      <section>
+        <h2>FDM - Fused Deposition Modeling</h2>
+        <h3>Principe de fonctionnement</h3>
+        <p>La technologie FDM utilise des filaments thermoplastiques contenant les principes actifs. Le matériau est fondu puis déposé couche par couche pour former la structure finale.</p>
+        
+        <h3>Avantages</h3>
+        <ul>
+          <li>Coût d'équipement relativement accessible</li>
+          <li>Facilité d'utilisation et de maintenance</li>
+          <li>Large gamme de polymères compatibles</li>
+          <li>Idéal pour les formes à libération modifiée</li>
+        </ul>
+
+        <h3>Applications pharmaceutiques</h3>
+        <p>Particulièrement adaptée pour les comprimés à libération contrôlée, les formes pédiatriques, et les combinaisons fixes de principes actifs.</p>
+      </section>
+
+      <section>
+        <h2>SLA - Stéréolithographie</h2>
+        <h3>Principe de fonctionnement</h3>
+        <p>La SLA utilise un laser UV pour polymériser sélectivement une résine photosensible liquide. Cette technologie offre une précision exceptionnelle.</p>
+        
+        <h3>Avantages</h3>
+        <ul>
+          <li>Résolution très fine (jusqu'à 25 µm)</li>
+          <li>Formes complexes possibles</li>
+          <li>Surface lisse et homogène</li>
+          <li>Excellent pour les micro-dosages</li>
+        </ul>
+
+        <h3>Applications pharmaceutiques</h3>
+        <p>Idéale pour les médicaments nécessitant des dosages ultra-précis, les formes galéniques innovantes, et les dispositifs médicaux personnalisés.</p>
+      </section>
+
+      <section>
+        <h2>SLS - Selective Laser Sintering</h2>
+        <h3>Principe de fonctionnement</h3>
+        <p>Le SLS utilise un laser pour fritter des poudres pharmaceutiques couche par couche, sans nécessiter de support.</p>
+        
+        <h3>Avantages</h3>
+        <ul>
+          <li>Grande liberté de formulation</li>
+          <li>Pas de support nécessaire</li>
+          <li>Excellente stabilité des principes actifs</li>
+          <li>Production rapide</li>
+        </ul>
+
+        <h3>Applications pharmaceutiques</h3>
+        <p>Parfait pour les formulations complexes, les médicaments thermosensibles, et la production en petites séries.</p>
+      </section>
+
+      <section>
+        <h2>Comparaison et choix de la technologie</h2>
+        <div class="comparison-table">
+          <div class="tech-card">
+            <h4>FDM</h4>
+            <p><strong>Coût:</strong> €€</p>
+            <p><strong>Précision:</strong> Moyenne</p>
+            <p><strong>Vitesse:</strong> Rapide</p>
+            <p><strong>Best for:</strong> Libération contrôlée</p>
+          </div>
+          <div class="tech-card">
+            <h4>SLA</h4>
+            <p><strong>Coût:</strong> €€€</p>
+            <p><strong>Précision:</strong> Très haute</p>
+            <p><strong>Vitesse:</strong> Moyenne</p>
+            <p><strong>Best for:</strong> Micro-dosages</p>
+          </div>
+          <div class="tech-card">
+            <h4>SLS</h4>
+            <p><strong>Coût:</strong> €€€€</p>
+            <p><strong>Précision:</strong> Haute</p>
+            <p><strong>Vitesse:</strong> Très rapide</p>
+            <p><strong>Best for:</strong> Séries complexes</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="related-articles">
+        <h2>Articles liés</h2>
+        <div class="related-grid">
+          <a href="/guides/impression-3d-pharmaceutique" class="related-card">
+            <h3>Guide complet</h3>
+            <p>Introduction à l'impression 3D pharmaceutique</p>
+          </a>
+          <a href="/guides/reglementation-impression-3d" class="related-card">
+            <h3>Réglementation</h3>
+            <p>Cadre légal et normes</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .article-container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+  .article-header { margin-bottom: 3rem; }
+  .breadcrumb { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem; font-size: 0.875rem; color: var(--text-secondary); }
+  .breadcrumb a { color: var(--primary-blue); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .article-header h1 { font-size: 2.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem; }
+  .article-meta { color: var(--text-secondary); font-size: 0.9375rem; }
+  .article-content { font-size: 1.0625rem; line-height: 1.8; }
+  .article-content h2 { font-size: 1.875rem; font-weight: 600; margin: 2.5rem 0 1.5rem; }
+  .article-content h3 { font-size: 1.5rem; font-weight: 600; margin: 2rem 0 1rem; color: var(--primary-blue); }
+  .article-content h4 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; }
+  .article-content ul { margin: 1.5rem 0; padding-left: 1.5rem; }
+  .article-content li { margin-bottom: 0.75rem; }
+  .comparison-table { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+  .tech-card { background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); }
+  .tech-card h4 { color: var(--primary-blue); margin-top: 0; }
+  .related-articles { margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--border-color); }
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+  .related-card { background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); text-decoration: none; transition: all 0.2s; }
+  .related-card:hover { transform: translateY(-2px); box-shadow: var(--hover-shadow); }
+  .related-card h3 { color: var(--primary-blue); font-size: 1.125rem; margin: 0 0 0.5rem 0; }
+  .related-card p { color: var(--text-secondary); font-size: 0.9375rem; margin: 0; }
+  @media (max-width: 768px) { .article-container { padding: 1rem; } .article-header h1 { font-size: 2rem; } .comparison-table { grid-template-columns: 1fr; } }
+</style>
