@@ -3,6 +3,8 @@ backend:
   repo: dreamoove/mb-therapeutics-blog
   branch: main
 
+  base_url: https://mb-therapeutics-blog.vercel.app
+    auth_endpoint: /api/auth
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
