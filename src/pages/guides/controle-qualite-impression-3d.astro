@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Contrôle qualité en impression 3D pharmaceutique | MB Therapeutics">
+  <article class="article-container">
+    <header class="article-header">
+      <nav class="breadcrumb">
+        <a href="/">Accueil</a> <span>/</span>
+        <a href="/guides">Guides</a> <span>/</span>
+        <span>Contrôle qualité</span>
+      </nav>
+      <h1>Contrôle qualité et assurance qualité en impression 3D pharmaceutique</h1>
+      <div class="article-meta">
+        <span class="date">📅 Mise à jour 2024</span>
+        <span class="reading-time">⏱️ 7 min</span>
+        <span class="category">Qualité</span>
+      </div>
+    </header>
+    <section class="article-content">
+      <h2>Introduction</h2>
+      <p>Le contrôle qualité est essentiel en impression 3D pharmaceutique pour garantir la sécurité et l'efficacité des médicaments produits.</p>
+      
+      <h2>Principes fondamentaux</h2>
+      <div class="highlight-box">
+        <h3>Piliers du système qualité</h3>
+        <ul>
+          <li><strong>Qualification des équipements</strong> : IQ/OQ/PQ obligatoires</li>
+          <li><strong>Validation des procédés</strong> : Reproductibilité démontrée</li>
+          <li><strong>Contrôles en cours de production</strong> : Surveillance continue</li>
+          <li><strong>Contrôles finaux</strong> : Libération pharmaceutique</li>
+        </ul>
+      </div>
+
+      <h2>Qualification des imprimantes 3D</h2>
+      <h3>IQ - Qualification d'Installation</h3>
+      <ul>
+        <li>Vérification des spécifications techniques</li>
+        <li>Contrôle de l'environnement (température, humidité)</li>
+        <li>Documentation complète de l'installation</li>
+      </ul>
+
+      <h3>OQ - Qualification Opérationnelle</h3>
+      <ul>
+        <li>Tests de précision et répétabilité</li>
+        <li>Calibration des axes et de l'extrusion</li>
+        <li>Vérification des alarmes et sécurités</li>
+      </ul>
+
+      <h3>PQ - Qualification de Performance</h3>
+      <ul>
+        <li>Production de lots tests représentatifs</li>
+        <li>Validation sur formulations réelles</li>
+        <li>Démonstration de la robustesse</li>
+      </ul>
+
+      <h2>Contrôles analytiques</h2>
+      <h3>Tests essentiels</h3>
+      <ul>
+        <li><strong>Uniformité de masse</strong> : Pesée systématique</li>
+        <li><strong>Teneur en principe actif</strong> : HPLC/UV</li>
+        <li><strong>Dissolution</strong> : Profils cinétiques</li>
+        <li><strong>Aspect visuel</strong> : Inspection systématique</li>
+        <li><strong>Dureté/friabilité</strong> : Tests mécaniques</li>
+      </ul>
+
+      <h2>Documentation et traçabilité</h2>
+      <p>Chaque production doit être intégralement traçée : fichier 3D, paramètres d'impression, matières premières, résultats analytiques.</p>
+
+      <h2>Conclusion</h2>
+      <p>Un système qualité rigoureux garantit la conformité réglementaire et la sécurité des patients.</p>
+    </section>
+    <section class="related-articles">
+      <h2>Articles liés</h2>
+      <div class="related-grid">
+        <a href="/guides/reglementation-impression-3d" class="related-card">
+          <h3>Réglementation</h3>
+          <p>Cadre légal de l'impression 3D</p>
+        </a>
+        <a href="/guides/technologies-impression-3d" class="related-card">
+          <h3>Technologies</h3>
+          <p>Comparaison des procédés d'impression</p>
+        </a>
+      </div>
+    </section>
+  </article>
+</Layout>
+
+<style>
+  .article-container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+  .article-header { margin-bottom: 3rem; }
+  .breadcrumb { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-secondary); }
+  .breadcrumb a { color: var(--primary-blue); text-decoration: none; }
+  .article-header h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+  .article-meta { display: flex; gap: 1.5rem; font-size: 0.95rem; color: var(--text-secondary); }
+  .article-meta .category { background: linear-gradient(135deg, var(--primary-blue), #6B9FFF); color: white; padding: 0.25rem 0.75rem; border-radius: 1rem; }
+  .article-content { font-size: 1.0625rem; line-height: 1.8; }
+  .article-content h2 { font-size: 1.875rem; margin: 2.5rem 0 1.5rem; }
+  .article-content h3 { font-size: 1.5rem; margin: 2rem 0 1rem; color: var(--primary-blue); }
+  .article-content ul { margin: 1.5rem 0; padding-left: 1.5rem; list-style: none; }
+  .article-content ul li::before { content: "▸"; color: var(--primary-blue); font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
+  .highlight-box { background: #F8FAFB; border-left: 4px solid var(--primary-blue); padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+  .highlight-box h3 { color: var(--primary-blue); font-size: 1.125rem; margin: 0 0 0.5rem 0; }
+  .related-articles { margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--border-color); }
+  .related-articles h2 { color: var(--primary-blue); font-size: 1.5rem; margin-bottom: 1.5rem; }
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+  .related-card { background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); text-decoration: none; transition: all 0.3s ease; }
+  .related-card:hover { transform: translateY(-4px); box-shadow: 0 6px 12px rgba(91, 141, 239, 0.15); }
+  .related-card h3 { color: var(--primary-blue); font-size: 1.125rem; margin: 0 0 0.5rem 0; }
+  @media (max-width: 768px) { .article-container { padding: 1rem; } .article-header h1 { font-size: 1.875rem; } }
+</style>
