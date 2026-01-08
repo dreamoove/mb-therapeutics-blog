@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Actualités - MB Therapeutics Blog">
+  <main>
+    <section class="hero">
+      <h1>Actualités</h1>
+      <p>Les dernières nouvelles et réglementations dans le domaine pharmaceutique</p>
+    </section>
+
+    <section class="articles">
+      <div class="article-card">
+        <h2>Nouvelles réformes réglementaires 2024</h2>
+        <p>Découvrez les dernières réformes qui impactent le secteur de la pharmacie hospitalière.</p>
+        <a href="/actualites/reformes-reglementaires-2024">Lire l'article →</a>
+      </div>
+
+      <div class="article-card">
+        <h2>Innovations en impression 3D pharmaceutique</h2>
+        <p>Les dernières avancées technologiques dans l'impression 3D de médicaments personnalisés.</p>
+        <a href="/actualites/innovations-impression-3d">Lire l'article →</a>
+      </div>
+
+      <div class="article-card">
+        <h2>Évolution de la personnalisation des médicaments</h2>
+        <p>Comment la personnalisation change la donne dans le traitement des patients.</p>
+        <a href="/actualites/personnalisation-medicaments">Lire l'article →</a>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+    color: #666;
+  }
+
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .article-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+
+  .article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .article-card h2 {
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .article-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .article-card a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .article-card a:hover {
+    text-decoration: underline;
+  }
+</style>
