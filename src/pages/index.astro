@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Accueil - MB Therapeutics Blog">
+  <section style="text-align: center; padding: 3rem 0;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #2563eb;">Bienvenue sur le Blog MB Therapeutics</h1>
+    <p style="font-size: 1.25rem; color: #6b7280; max-width: 700px; margin: 0 auto 2rem;">Découvrez nos articles sur l'impression 3D pharmaceutique, les médicaments personnalisés et l'innovation en pharmacie hospitalière</p>
+  </section>
+
+  <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
+    <article style="background: #f9fafb; padding: 2rem; border-radius: 0.5rem; border: 1px solid #e5e7eb;">
+      <h2 style="color: #2563eb; margin-bottom: 1rem;">Guides</h2>
+      <p style="color: #6b7280; margin-bottom: 1.5rem;">Guides complets sur les technologies et processus d'impression 3D pharmaceutique</p>
+      <a href="/guides" style="color: #2563eb; text-decoration: none; font-weight: 600;">Voir les guides →</a>
+    </article>
+
+    <article style="background: #f9fafb; padding: 2rem; border-radius: 0.5rem; border: 1px solid #e5e7eb;">
+      <h2 style="color: #2563eb; margin-bottom: 1rem;">Actualités</h2>
+      <p style="color: #6b7280; margin-bottom: 1.5rem;">Les dernières nouvelles et réglementations dans le domaine pharmaceutique</p>
+      <a href="/news" style="color: #2563eb; text-decoration: none; font-weight: 600;">Voir les actualités →</a>
+    </article>
+  </section>
+
+  <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem; border-radius: 0.75rem; text-align: center; margin: 3rem 0;">
+    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Besoin de nos services ?</h2>
+    <p style="font-size: 1.125rem; margin-bottom: 1.5rem; opacity: 0.9;">Découvrez comment nos solutions d'impression 3D pharmaceutique peuvent transformer votre pharmacie hospitalière</p>
+    <a href="https://mb-therapeutics.vercel.app/fr/" target="_blank" style="display: inline-block; background: white; color: #667eea; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600;">Visiter notre site</a>
+  </section>
+</Layout>
