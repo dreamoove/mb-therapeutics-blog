@@ -1,0 +1,36 @@
+backend:
+  name: github
+  repo: dreamoove/mb-therapeutics-blog
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+locale: 'fr'
+
+collections:
+  - name: "guides"
+    label: "Guides"
+    folder: "src/content/guides"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Date de publication", name: "pubDate", widget: "datetime"}
+      - {label: "Temps de lecture", name: "readingTime", widget: "string", default: "5 min"}
+      - {label: "Catégorie", name: "category", widget: "string", default: "Guide"}
+      - {label: "Corps de l'article", name: "body", widget: "markdown"}
+
+  - name: "actualites"
+    label: "Actualités"
+    folder: "src/content/actualites"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Date de publication", name: "pubDate", widget: "datetime"}
+      - {label: "Temps de lecture", name: "readingTime", widget: "string", default: "5 min"}
+      - {label: "Catégorie", name: "category", widget: "select", options: ["Réglementation", "Innovation", "Tendances"]}
+      - {label: "Corps de l'article", name: "body", widget: "markdown"}
