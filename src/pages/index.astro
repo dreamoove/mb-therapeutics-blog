@@ -3,28 +3,178 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Accueil - MB Therapeutics Blog">
-  <section style="text-align: center; padding: 3rem 0;">
-    <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #2563eb;">Bienvenue sur le Blog MB Therapeutics</h1>
-    <p style="font-size: 1.25rem; color: #6b7280; max-width: 700px; margin: 0 auto 2rem;">Découvrez nos articles sur l'impression 3D pharmaceutique, les médicaments personnalisés et l'innovation en pharmacie hospitalière</p>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>Bienvenue sur le Blog MB Therapeutics</h1>
+      <p>Découvrez nos articles sur l'impression 3D pharmaceutique, les médicaments personnalisés et l'innovation en pharmacie hospitalière</p>
+    </section>
 
-  <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
-    <article style="background: #f9fafb; padding: 2rem; border-radius: 0.5rem; border: 1px solid #e5e7eb;">
-      <h2 style="color: #2563eb; margin-bottom: 1rem;">Guides</h2>
-      <p style="color: #6b7280; margin-bottom: 1.5rem;">Guides complets sur les technologies et processus d'impression 3D pharmaceutique</p>
-      <a href="/guides" style="color: #2563eb; text-decoration: none; font-weight: 600;">Voir les guides →</a>
-    </article>
+    <section class="categories">
+      <article class="category-card">
+        <div class="card-icon">📚</div>
+        <h2>Guides</h2>
+        <p>Guides complets sur les technologies et processus d'impression 3D pharmaceutique</p>
+        <a href="/guides" class="btn-primary">Voir les guides →</a>
+      </article>
 
-    <article style="background: #f9fafb; padding: 2rem; border-radius: 0.5rem; border: 1px solid #e5e7eb;">
-      <h2 style="color: #2563eb; margin-bottom: 1rem;">Actualités</h2>
-      <p style="color: #6b7280; margin-bottom: 1.5rem;">Les dernières nouvelles et réglementations dans le domaine pharmaceutique</p>
-      <a href="/news" style="color: #2563eb; text-decoration: none; font-weight: 600;">Voir les actualités →</a>
-    </article>
-  </section>
+      <article class="category-card">
+        <div class="card-icon">📰</div>
+        <h2>Actualités</h2>
+        <p>Les dernières nouvelles et réglementations dans le domaine pharmaceutique</p>
+        <a href="/actualites" class="btn-primary">Voir les actualités →</a>
+      </article>
+    </section>
 
-  <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem; border-radius: 0.75rem; text-align: center; margin: 3rem 0;">
-    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Besoin de nos services ?</h2>
-    <p style="font-size: 1.125rem; margin-bottom: 1.5rem; opacity: 0.9;">Découvrez comment nos solutions d'impression 3D pharmaceutique peuvent transformer votre pharmacie hospitalière</p>
-    <a href="https://mb-therapeutics.vercel.app/fr/" target="_blank" style="display: inline-block; background: white; color: #667eea; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600;">Visiter notre site</a>
-  </section>
+    <section class="cta">
+      <div class="cta-content">
+        <h2>Besoin de nos services ?</h2>
+        <p>Découvrez comment nos solutions d'impression 3D pharmaceutique peuvent transformer votre pharmacie hospitalière</p>
+        <a href="https://mb-therapeutics.vercel.app/fr/" target="_blank" class="btn-secondary">Visiter notre site</a>
+      </div>
+    </section>
+  </main>
 </Layout>
+
+<style>
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 3rem 0 4rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .hero p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+
+  .category-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+  }
+
+  .category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--hover-shadow);
+  }
+
+  .card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .category-card h2 {
+    color: var(--primary-blue);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .category-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.2s;
+  }
+
+  .btn-primary:hover {
+    color: var(--dark-blue);
+  }
+
+  .cta {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #4F7BFF 100%);
+    border-radius: 16px;
+    padding: 3rem;
+    text-align: center;
+    margin-top: 4rem;
+    box-shadow: 0 8px 24px rgba(91, 141, 239, 0.25);
+  }
+
+  .cta-content h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    background: white;
+    color: var(--primary-blue);
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+
+    .categories {
+      grid-template-columns: 1fr;
+    }
+
+    .cta {
+      padding: 2rem;
+    }
+
+    .cta-content h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
